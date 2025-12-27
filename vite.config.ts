@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
+  base: "/quotation-form/",
   plugins: [react()],
   css: {
     devSourcemap: true, // CSS 소스맵 활성화 (Vite 3+)
