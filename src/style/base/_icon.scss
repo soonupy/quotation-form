@@ -1,0 +1,35 @@
+[class^="ico"] {
+    width: var(--ico-size, 1.5rem); // 기본값 24px
+    border: var(--ico-border, none);
+    color: var(--ico-color, currentColor);
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &.ico-xs {
+      --ico-size: 0.75rem;
+    } // 12px
+    &.ico-sm {
+      --ico-size: 0.875rem;
+    } // 14px
+    &.ico-md {
+      --ico-size: 1rem;
+    } // 16px
+    &.ico-lg {
+      --ico-size: 1.25rem;
+    } // 20px ⭐
+    &.ico-xl {
+      --ico-size: 1.5rem;
+    } // 24px
+    &.ico-2xl {
+      --ico-size: 2rem;
+    } // 32px
+    &.ico-3xl {
+      --ico-size: 2.5rem;
+    } // 40px
+    &.ico-utill {
+      --ico-size: 24px;
+    } // 고정 크기
+  }
+  

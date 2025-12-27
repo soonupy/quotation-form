@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* -----------------------------------
+   reset.scss - Hybrid Reset + Normalize
+----------------------------------- */
+
+/* 박스 모델 & 여백 초기화 */
+
+:where(*, *::before, *::after) {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 기본 폰트 설정 및 렌더링 개선 */
+html {
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* body 기본 색상/배경/최소높이 */
+body {
+  min-height: 100dvh;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
+  color: var(--color-text);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 헤딩/텍스트 초기화 */
+:where(p, h1, h2, h3, h4, h5, h6) {
+  font-weight: normal;
+}
+
+/* 강조 텍스트 */
+:where(strong, b) {
+  font-weight: bold;
+}
+:where(em, i) {
+  font-style: normal;
+}
+
+/* 리스트 요소 */
+:where(ul, ol) {
+  list-style: none;
+}
+
+/* 링크 초기화 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 버튼 & 폼 요소 공통 초기화 */
+
+:where(input, button, textarea, select) {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+:where(button, label) {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* 미디어 요소 반응형 처리 */
+:where(picture, video, canvas, img, svg) {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* 테이블 초기화 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 구분선 */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* 코드 영역 */
+:where(pre, code) {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+}

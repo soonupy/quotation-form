@@ -1,0 +1,7 @@
+// Base Styles
+@use "@style/base/_icon.scss" as *;
+@use "@style/base/_reset.scss" as *;
+
+// layout Style
+@use "@style/layout/layout.scss" as *;
+@use "@style/layout/content.scss" as *;
