@@ -5,7 +5,7 @@ type ActionBarProps = {
   onPrint: () => void;
 };
 
-export function ActionBar({ onAdd, onPrint }: ActionBarProps) {
+export function ActionBar({ onAdd }: ActionBarProps) {
   return (
     <div className="sheet__actions">
       {/* <button className="secondary-button" onClick={onPrint}>
